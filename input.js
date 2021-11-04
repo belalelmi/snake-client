@@ -1,4 +1,3 @@
-// const { connect } = require('./client');
 const stdin = process.stdin;
 let connection;
 
@@ -23,6 +22,8 @@ const handleUserInput = (input) => {
     connection.write("Move: down");
   } else if (input === 'a') {
     connection.write("Move: left");
+  } else if (input === 'b') {
+    connection.write("Say: MrSir")
   }
 
 };
